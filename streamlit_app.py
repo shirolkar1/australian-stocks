@@ -1,6 +1,8 @@
-
 import streamlit as st
 import pandas as pd
+
+# Setting page configuration to wide mode
+st.set_page_config(layout="wide")
 
 # Load the DataFrame
 file_path = 'https://drive.google.com/uc?export=download&id=1-CgGfpzLa862SbgmQaVG7uY6GxTkP0Bn'
