@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-# Setting page configuration to wide mode
+# Configure the page to use wide mode
 st.set_page_config(layout="wide")
 
 # Load the DataFrame
@@ -11,8 +11,8 @@ df = pd.read_csv(file_path)
 def app():
     st.title('Stock Buy/Sell Recommendations')
 
-    # Display the DataFrame
-    st.dataframe(df)
+    # Display the DataFrame, setting it to use the container's width
+    st.dataframe(df, use_container_width=True)
 
     # Dropdown for stock selection
     stock_options = df['Name of the Stock'].unique().tolist()
