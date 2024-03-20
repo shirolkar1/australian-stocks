@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the DataFrame
-file_path = '/Users/alokeshirolkar/Library/CloudStorage/GoogleDrive-alokeshirolkar@gmail.com/My Drive/NEWAUSTRALIAN/streamlit/streamlitinput.csv'
+file_path = 'https://drive.google.com/file/d/1-CgGfpzLa862SbgmQaVG7uY6GxTkP0Bn/view?usp=drivesdk'
 df = pd.read_csv(file_path)
 
 def app():
